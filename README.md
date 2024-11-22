@@ -29,7 +29,9 @@ from geojson_toolkit import create_buffer_geojson
 line_coords = [(37.6173, 55.7558), (37.6300, 55.7590)]  # list <lat,long>
 buffer_distance = 500                                   # buffer in meters
 
-create_buffer_geojson(line_coords=line_coords, buffer_distance=buffer_distance, output_path="Buffer.geojson")
+create_buffer_geojson(line_coords=line_coords,
+                      buffer_distance=buffer_distance,
+                      output_path="Buffer.geojson")
 ```
 
 ### Combine polygons into one object
